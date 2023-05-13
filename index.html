@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glassomorphism</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="A Tool for Glassomorphism CSS Generator">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gokul V">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="path/to/jquery.min.js"></script>
+</head>
+
+<body>
+    <canvas class="background"></canvas>
+
+    <div class="container">
+
+        <div class="result result_box" >
+            <div class="box_1" id="result_box">
+
+            </div>
+            <div class="box_2" id="result_box">
+                
+            </div>
+        </div>
+
+        <div class="title">
+            <div>GLASSMORPHISM</div>
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="content">
+            <div class="content_title">Glassmorphism CSS Generator</div>
+            <div class="content_sub_title">Create a CSS Glass Effect</div>
+
+            <form id="form1">
+            <div class="slider">
+                <label for="transparency">TRANSPARENCY</label>
+                <input type="range" min="0" max="1" value="0.5" id="transparency" step="0.01" default class="range" class-to-change="input-range">
+            </div>
+
+            <div class="slider">
+                <label for="blur">BLUR</label>
+                <input type="range" min="0" max="20" value="5" id="blur" step="0.01" class="range" class-to-change="input-range">
+            </div>
+
+            <div class="slider">
+                <label for="outline">OUTLINE</label>
+                <input type="range" min="0" max="1" value="0.5" id="outline" step="0.01" class="range" class-to-change="input-range">
+            </div>
+            </form>
+
+            <div class="text_copy">
+                <div class="text_copy_icon" id="text_copy_icon" onclick="textCopy()">
+                    <img src="./assets/textCopy.png" alt="textCopy_icon">
+                </div>
+                <div class="content_title">CSS</div>
+                <span class="content_sub_title text_copied">background: <span id="background">rgba(103, 86, 86, 0.7);</span></span>
+                <span class="content_sub_title text_copied">border-radius: 16px;</span>
+                <span class="content_sub_title text_copied">box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);</span>
+                <span class="content_sub_title text_copied">backdrop-filter: <span id="blur_value">blur(19.3px);</span></span>
+                <span class="content_sub_title text_copied">-webkit-backdrop-filter: <span id="blur_value">blur(19.3px);</span></span>
+                <span class="content_sub_title text_copied">border: 1px solid <span id="border_value">rgba(103, 86, 86, 1);</span></div>
+                <div class="copied_text" id="text_copy">
+                    background: <span id="background">rgba(103, 86, 86, 0.7);</span> 
+                    border-radius: 16px; 
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: <span id="blur_value">blur(19.3px);</span>
+                    -webkit-backdrop-filter: <span id="blur_value">blur(19.3px);
+                    border: 1px solid <span id="border_value">rgba(103, 86, 86, 1);</span>
+                    background: <span id="background">rgba(103, 86, 86, 0.7);
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="path/to/particles.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
